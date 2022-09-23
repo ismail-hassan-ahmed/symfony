@@ -65,7 +65,7 @@ class __TwigTemplate_1f0af442bf03cca335908435f2fc56cb extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello ProfileController!
+        echo "Blog: Profile
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -143,7 +143,7 @@ class __TwigTemplate_1f0af442bf03cca335908435f2fc56cb extends Template
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 46, $this->source); })()), "user", [], "any", false, false, false, 46), "lastName", [], "any", false, false, false, 46), "html", null, true);
         echo "
 \t\t\t\t\t\t\t</h3>
-\t\t\t\t\t\t\t<div class=\"text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase\">
+\t\t\t\t\t\t\t<div class=\"text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold\">
 \t\t\t\t\t\t\t\t<i class=\"fas fa-email mr-2 text-lg text-gray-500\"></i>
 \t\t\t\t\t\t\t\t";
         // line 50
@@ -201,7 +201,7 @@ class __TwigTemplate_1f0af442bf03cca335908435f2fc56cb extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello ProfileController!
+{% block title %}Blog: Profile
 {% endblock %}
 
 {% block body %}
@@ -246,7 +246,7 @@ class __TwigTemplate_1f0af442bf03cca335908435f2fc56cb extends Template
 \t\t\t\t\t\t\t<h3 class=\"text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2\">
 \t\t\t\t\t\t\t\t{{app.user.firstName}} {{app.user.lastName}}
 \t\t\t\t\t\t\t</h3>
-\t\t\t\t\t\t\t<div class=\"text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase\">
+\t\t\t\t\t\t\t<div class=\"text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold\">
 \t\t\t\t\t\t\t\t<i class=\"fas fa-email mr-2 text-lg text-gray-500\"></i>
 \t\t\t\t\t\t\t\t{{app.user.email}}
 \t\t\t\t\t\t\t</div>

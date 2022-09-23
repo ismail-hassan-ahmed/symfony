@@ -108,7 +108,7 @@ class __TwigTemplate_27679187b9cd1ac7545281c6a9d92cf3 extends Template
 \t\t\t\t\t<p class=\"mb-2 text-md font-semibold text-gray-600\">
 \t\t\t\t\t\tPublié le ";
             // line 15
-            echo twig_escape_filter($this->env, $this->extensions['Twig\Extra\Intl\IntlExtension']->formatDateTime($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "publishedAt", [], "any", false, false, false, 15), "medium", "medium", "", null, "gregorian", "fr"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Twig\Extra\Intl\IntlExtension']->formatDateTime($this->env, twig_get_attribute($this->env, $this->source, $context["article"], "publishedAt", [], "any", false, false, false, 15)), "html", null, true);
             echo " par ";
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["article"], "user", [], "any", false, false, false, 15), "firstName", [], "any", false, false, false, 15), "html", null, true);
             echo "
@@ -129,7 +129,7 @@ class __TwigTemplate_27679187b9cd1ac7545281c6a9d92cf3 extends Template
             echo "
 \t\t\t\t\t</p>
 \t\t\t\t\t<div class=\"flex space-x-4\">
-\t\t\t\t\t\t<a href=\"/\" aria-label=\"Likes\" class=\"flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group\">
+\t\t\t\t\t\t<a href=\"#s\" aria-label=\"Likes\" class=\"flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group\">
 \t\t\t\t\t\t\t<div class=\"mr-2\">
 \t\t\t\t\t\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700\">
 \t\t\t\t\t\t\t\t\t<polyline points=\"6 23 1 23 1 12 6 12\" fill=\"none\" stroke-miterlimit=\"10\"></polyline>
@@ -201,7 +201,7 @@ class __TwigTemplate_27679187b9cd1ac7545281c6a9d92cf3 extends Template
 \t\t\t\t<a href=\"{{path('article_show', {'slug': article.slug })}}\" aria-label=\"Article\"><img src=\"/images/articles/{{article.imageName}}\" class=\"object-cover w-full h-64 rounded\" alt=\"\"/></a>
 \t\t\t\t<div class=\"py-5\">
 \t\t\t\t\t<p class=\"mb-2 text-md font-semibold text-gray-600\">
-\t\t\t\t\t\tPublié le {{article.publishedAt|format_datetime(locale=\"fr\")}} par {{article.user.firstName}}
+\t\t\t\t\t\tPublié le {{article.publishedAt|format_datetime()}} par {{article.user.firstName}}
 \t\t\t\t\t</p>
 \t\t\t\t\t<a href=\"{{path('article_show', {'slug': article.slug })}}\" aria-label=\"Article\" class=\"inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700\">
 \t\t\t\t\t\t<p class=\"text-2xl font-bold leading-5\">{{article.title}}</p>
@@ -210,7 +210,7 @@ class __TwigTemplate_27679187b9cd1ac7545281c6a9d92cf3 extends Template
 \t\t\t\t\t\t{{article.content|u.truncate(100)}}
 \t\t\t\t\t</p>
 \t\t\t\t\t<div class=\"flex space-x-4\">
-\t\t\t\t\t\t<a href=\"/\" aria-label=\"Likes\" class=\"flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group\">
+\t\t\t\t\t\t<a href=\"#s\" aria-label=\"Likes\" class=\"flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group\">
 \t\t\t\t\t\t\t<div class=\"mr-2\">
 \t\t\t\t\t\t\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" class=\"w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700\">
 \t\t\t\t\t\t\t\t\t<polyline points=\"6 23 1 23 1 12 6 12\" fill=\"none\" stroke-miterlimit=\"10\"></polyline>

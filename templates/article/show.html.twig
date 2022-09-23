@@ -41,7 +41,7 @@
 					</div>
 					<div class="flex-1 border-4 rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
 						<strong>{{comment.user.firstName}}</strong>
-						<span class="text-md text-gray-400 font-bold">{{comment.publishedAt|format_datetime(locale="fr")}}</span>
+						<span class="text-md text-gray-400 font-bold">{{comment.publishedAt|format_datetime()}}</span>
 						<p class="text-sm">
 							{{comment.content}}
 						</p>

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ArticleController!
+{% block title %}Blog: Créer un article
 {% endblock %}
 
 {% block body %}
@@ -19,21 +19,21 @@
 					<div class="space-y-4">
 						{{form_start(FormArticle)}}
 						<div>
-							{{form_label(FormArticle.title, "Titre de l'article", {'label_attr': {'class': ''}})}}
-							{{form_widget(FormArticle.title, {'attr': {'class' : 'w-full p-3 text-sm border-gray-700 rounded-lg'}})}}
+							{{form_label(FormArticle.title, "Titre de l'article", {'label_attr': {'class': 'text-gray-800 font-semibold mb-2'}})}}
+							{{form_widget(FormArticle.title, {'attr': {'class' : 'w-full p-3 text-sm border-gray-700 rounded-lg mt-2 mb-2'}})}}
 							{{form_errors(FormArticle.title)}}
 						</div>
 
 						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 							<div>
-								{{form_label(FormArticle.imageFile, "Télécharger une image", {'label_attr': {'class': ''}})}}
-								{{form_widget(FormArticle.imageFile, {'attr': {'class' : 'w-full p-3 text-sm border-gray-400 rounded-lg'}})}}
+								{{form_label(FormArticle.imageFile, "Télécharger une image", {'label_attr': {'class': 'text-gray-800 font-semibold'}})}}
+								{{form_widget(FormArticle.imageFile, {'attr': {'class' : 'w-full p-3 mt-2 text-sm border-gray-400 rounded-lg'}})}}
 								{{form_errors(FormArticle.imageFile)}}
 							</div>
 						</div>
 						<div>
-							{{form_label(FormArticle.content, "Contenu de l'article", {'label_attr': {'class': ''}})}}
-							{{form_widget(FormArticle.content, {'attr': {'class' : 'border-gray-700 w-full p-3 h-40 text-sm rounded-lg'}})}}
+							{{form_label(FormArticle.content, "Contenu de l'article", {'label_attr': {'class': 'text-gray-800 font-semibold'}})}}
+							{{form_widget(FormArticle.content, {'attr': {'class' : 'border-gray-700 mt-2 w-full p-3 h-40 text-sm rounded-lg'}})}}
 							{{form_errors(FormArticle.content)}}
 
 						</div>

@@ -12,7 +12,7 @@
 				<a href="{{path('article_show', {'slug': article.slug })}}" aria-label="Article"><img src="/images/articles/{{article.imageName}}" class="object-cover w-full h-64 rounded" alt=""/></a>
 				<div class="py-5">
 					<p class="mb-2 text-md font-semibold text-gray-600">
-						Publié le {{article.publishedAt|format_datetime(locale="fr")}} par {{article.user.firstName}}
+						Publié le {{article.publishedAt|format_datetime()}} par {{article.user.firstName}}
 					</p>
 					<a href="{{path('article_show', {'slug': article.slug })}}" aria-label="Article" class="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700">
 						<p class="text-2xl font-bold leading-5">{{article.title}}</p>
@@ -21,7 +21,7 @@
 						{{article.content|u.truncate(100)}}
 					</p>
 					<div class="flex space-x-4">
-						<a href="/" aria-label="Likes" class="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group">
+						<a href="#s" aria-label="Likes" class="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group">
 							<div class="mr-2">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 text-gray-600 transition-colors duration-200 group-hover:text-deep-purple-accent-700">
 									<polyline points="6 23 1 23 1 12 6 12" fill="none" stroke-miterlimit="10"></polyline>

@@ -71,7 +71,7 @@ class __TwigTemplate_733abb95d42c1f6cf333ba1662845a1c extends Template
 
 
 \t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a class=\"text-gray-600 font-bold transition hover:text-gray-500/75\" href=\"/\">
+\t\t\t\t\t\t\t<a class=\"text-gray-600 font-bold transition hover:text-gray-500/75\" href=\"#\">
 \t\t\t\t\t\t\t\tFAQ
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t</li>
@@ -193,7 +193,7 @@ class __TwigTemplate_733abb95d42c1f6cf333ba1662845a1c extends Template
 
 
 \t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a class=\"text-gray-600 font-bold transition hover:text-gray-500/75\" href=\"/\">
+\t\t\t\t\t\t\t<a class=\"text-gray-600 font-bold transition hover:text-gray-500/75\" href=\"#\">
 \t\t\t\t\t\t\t\tFAQ
 \t\t\t\t\t\t\t</a>
 \t\t\t\t\t\t</li>

@@ -65,7 +65,7 @@ class __TwigTemplate_df3fabb0276a6456d727c40c242235c7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello ArticleController!
+        echo "Blog: Créer un article
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -108,11 +108,11 @@ class __TwigTemplate_df3fabb0276a6456d727c40c242235c7 extends Template
 \t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t";
         // line 22
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 22, $this->source); })()), "title", [], "any", false, false, false, 22), 'label', ["label_attr" => ["class" => ""], "label" => "Titre de l'article"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 22, $this->source); })()), "title", [], "any", false, false, false, 22), 'label', ["label_attr" => ["class" => "text-gray-800 font-semibold mb-2"], "label" => "Titre de l'article"]);
         echo "
 \t\t\t\t\t\t\t";
         // line 23
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 23, $this->source); })()), "title", [], "any", false, false, false, 23), 'widget', ["attr" => ["class" => "w-full p-3 text-sm border-gray-700 rounded-lg"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 23, $this->source); })()), "title", [], "any", false, false, false, 23), 'widget', ["attr" => ["class" => "w-full p-3 text-sm border-gray-700 rounded-lg mt-2 mb-2"]]);
         echo "
 \t\t\t\t\t\t\t";
         // line 24
@@ -124,11 +124,11 @@ class __TwigTemplate_df3fabb0276a6456d727c40c242235c7 extends Template
 \t\t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t\t";
         // line 29
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 29, $this->source); })()), "imageFile", [], "any", false, false, false, 29), 'label', ["label_attr" => ["class" => ""], "label" => "Télécharger une image"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 29, $this->source); })()), "imageFile", [], "any", false, false, false, 29), 'label', ["label_attr" => ["class" => "text-gray-800 font-semibold"], "label" => "Télécharger une image"]);
         echo "
 \t\t\t\t\t\t\t\t";
         // line 30
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 30, $this->source); })()), "imageFile", [], "any", false, false, false, 30), 'widget', ["attr" => ["class" => "w-full p-3 text-sm border-gray-400 rounded-lg"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 30, $this->source); })()), "imageFile", [], "any", false, false, false, 30), 'widget', ["attr" => ["class" => "w-full p-3 mt-2 text-sm border-gray-400 rounded-lg"]]);
         echo "
 \t\t\t\t\t\t\t\t";
         // line 31
@@ -139,11 +139,11 @@ class __TwigTemplate_df3fabb0276a6456d727c40c242235c7 extends Template
 \t\t\t\t\t\t<div>
 \t\t\t\t\t\t\t";
         // line 35
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 35, $this->source); })()), "content", [], "any", false, false, false, 35), 'label', ["label_attr" => ["class" => ""], "label" => "Contenu de l'article"]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 35, $this->source); })()), "content", [], "any", false, false, false, 35), 'label', ["label_attr" => ["class" => "text-gray-800 font-semibold"], "label" => "Contenu de l'article"]);
         echo "
 \t\t\t\t\t\t\t";
         // line 36
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 36, $this->source); })()), "content", [], "any", false, false, false, 36), 'widget', ["attr" => ["class" => "border-gray-700 w-full p-3 h-40 text-sm rounded-lg"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["FormArticle"]) || array_key_exists("FormArticle", $context) ? $context["FormArticle"] : (function () { throw new RuntimeError('Variable "FormArticle" does not exist.', 36, $this->source); })()), "content", [], "any", false, false, false, 36), 'widget', ["attr" => ["class" => "border-gray-700 mt-2 w-full p-3 h-40 text-sm rounded-lg"]]);
         echo "
 \t\t\t\t\t\t\t";
         // line 37
@@ -201,7 +201,7 @@ class __TwigTemplate_df3fabb0276a6456d727c40c242235c7 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello ArticleController!
+{% block title %}Blog: Créer un article
 {% endblock %}
 
 {% block body %}
@@ -220,21 +220,21 @@ class __TwigTemplate_df3fabb0276a6456d727c40c242235c7 extends Template
 \t\t\t\t\t<div class=\"space-y-4\">
 \t\t\t\t\t\t{{form_start(FormArticle)}}
 \t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t{{form_label(FormArticle.title, \"Titre de l'article\", {'label_attr': {'class': ''}})}}
-\t\t\t\t\t\t\t{{form_widget(FormArticle.title, {'attr': {'class' : 'w-full p-3 text-sm border-gray-700 rounded-lg'}})}}
+\t\t\t\t\t\t\t{{form_label(FormArticle.title, \"Titre de l'article\", {'label_attr': {'class': 'text-gray-800 font-semibold mb-2'}})}}
+\t\t\t\t\t\t\t{{form_widget(FormArticle.title, {'attr': {'class' : 'w-full p-3 text-sm border-gray-700 rounded-lg mt-2 mb-2'}})}}
 \t\t\t\t\t\t\t{{form_errors(FormArticle.title)}}
 \t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t<div class=\"grid grid-cols-1 gap-4 sm:grid-cols-2\">
 \t\t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t\t{{form_label(FormArticle.imageFile, \"Télécharger une image\", {'label_attr': {'class': ''}})}}
-\t\t\t\t\t\t\t\t{{form_widget(FormArticle.imageFile, {'attr': {'class' : 'w-full p-3 text-sm border-gray-400 rounded-lg'}})}}
+\t\t\t\t\t\t\t\t{{form_label(FormArticle.imageFile, \"Télécharger une image\", {'label_attr': {'class': 'text-gray-800 font-semibold'}})}}
+\t\t\t\t\t\t\t\t{{form_widget(FormArticle.imageFile, {'attr': {'class' : 'w-full p-3 mt-2 text-sm border-gray-400 rounded-lg'}})}}
 \t\t\t\t\t\t\t\t{{form_errors(FormArticle.imageFile)}}
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t\t<div>
-\t\t\t\t\t\t\t{{form_label(FormArticle.content, \"Contenu de l'article\", {'label_attr': {'class': ''}})}}
-\t\t\t\t\t\t\t{{form_widget(FormArticle.content, {'attr': {'class' : 'border-gray-700 w-full p-3 h-40 text-sm rounded-lg'}})}}
+\t\t\t\t\t\t\t{{form_label(FormArticle.content, \"Contenu de l'article\", {'label_attr': {'class': 'text-gray-800 font-semibold'}})}}
+\t\t\t\t\t\t\t{{form_widget(FormArticle.content, {'attr': {'class' : 'border-gray-700 mt-2 w-full p-3 h-40 text-sm rounded-lg'}})}}
 \t\t\t\t\t\t\t{{form_errors(FormArticle.content)}}
 
 \t\t\t\t\t\t</div>
