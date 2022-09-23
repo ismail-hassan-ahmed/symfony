@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog: Inscription
+{% endblock %}
+
+{% block body %}
+
+{% include "layouts/_navbar.html.twig" %}
+
+<!--
+  This component uses @tailwindcss/forms
+
+  yarn add @tailwindcss/forms
+  npm install @tailwindcss/forms
+
+  plugins: [require('@tailwindcss/forms')]
+-->
+
+<div class="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+  <div class="max-w-lg mx-auto text-center">
+    <h1 class="text-2xl font-bold sm:text-3xl">Inscrivez et publiez des articles !</h1>
+  </div>
+ {{form_start(registrationForm)}}
+  <div class="max-w-md mx-auto mt-8 mb-0 space-y-4">
+    <div>
+      
+	  {{form_label(registrationForm.firstName, 'Prénom', {'label_attr': {'class':'text-gray-500'}})}}
+
+      <div class="relative">
+	  	{{form_widget(registrationForm.firstName, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+		<div class="text-red-500 font-semibold text-xs bg-white">
+			{{form_errors(registrationForm.firstName)}}
+		</div>
+      </div>
+    </div>
+
+	<div>
+      {{form_label(registrationForm.lastName, 'Nom', {'label_attr': {'class':'text-gray-500'}})}}
+      <div class="relative">
+        	{{form_widget(registrationForm.lastName, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+		<div class="text-red-500 font-semibold text-xs bg-white">
+			{{form_errors(registrationForm.lastName)}}
+		</div>
+      </div>
+    </div>
+
+	<div>
+       {{form_label(registrationForm.email, 'Email', {'label_attr': {'class':'text-gray-500'}})}}
+
+      <div class="relative">
+        {{form_widget(registrationForm.email, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+		<div class="text-red-500 font-semibold text-xs bg-white">
+			{{form_errors(registrationForm.email)}}
+		</div>
+      </div>
+    </div>
+
+    <div>
+       {{form_label(registrationForm.plainPassword, 'Mot de passe', {'label_attr': {'class':'text-gray-500'}})}}
+      <div class="relative">
+        {{form_widget(registrationForm.plainPassword, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+		<div class="text-red-500 font-semibold text-xs bg-white">
+			{{form_errors(registrationForm.plainPassword)}}
+		</div>
+
+      </div>
+    </div>
+
+	<div>
+       {{form_label(registrationForm.agreeTerms, 'Je comprends', {'label_attr': {'class':'text-gray-500'}})}}
+
+      <div class="relative">
+        {{form_widget(registrationForm.agreeTerms, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+		<div class="text-red-500 font-semibold text-xs bg-white">
+			{{form_errors(registrationForm.agreeTerms)}}
+		</div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <p class="text-sm text-gray-500">
+        Vous avez déja un compte ?
+        <a class="underline" href="">Connectez-vous</a>
+      </p>
+
+      <button
+        type="submit"
+        class="inline-block px-5 py-3 ml-3 text-sm font-medium text-white bg-blue-500 rounded-lg"
+      >
+        Inscription
+      </button>
+    </div>
+  </div>
+  {{form_end(registrationForm)}}
+</div>
+
+	{# <h1>Register</h1>
+
+	{{ form_start(registrationForm) }}
+	{{form_row(registrationForm.firstName)}}
+	{{form_row(registrationForm.lastName)}}
+	{{ form_row(registrationForm.email) }}
+	{{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+	{{ form_row(registrationForm.agreeTerms) }}
+
+	<button type="submit" class="btn">Register</button>
+	{{ form_end(registrationForm) }} #}
+
+
+{% endblock %}

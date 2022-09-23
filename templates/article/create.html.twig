@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!
+{% endblock %}
+
+{% block body %}
+	{% include "layouts/_navbar.html.twig" %}
+	<section class="bg-gray-100">
+		<div class="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
+			<div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+				<div class="lg:py-12 lg:col-span-2">
+					<p class="max-w-xl text-lg">
+						At the same time, the fact that we are wholly owned and totally independent from manufacturer and other group
+						          control gives you confidence that we will only recommend what is right for you.
+					</p>
+				</div>
+
+				<div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
+					<div class="space-y-4">
+						{{form_start(FormArticle)}}
+						<div>
+							{{form_label(FormArticle.title, "Titre de l'article", {'label_attr': {'class': ''}})}}
+							{{form_widget(FormArticle.title, {'attr': {'class' : 'w-full p-3 text-sm border-gray-700 rounded-lg'}})}}
+							{{form_errors(FormArticle.title)}}
+						</div>
+
+						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+							<div>
+								{{form_label(FormArticle.imageFile, "Télécharger une image", {'label_attr': {'class': ''}})}}
+								{{form_widget(FormArticle.imageFile, {'attr': {'class' : 'w-full p-3 text-sm border-gray-400 rounded-lg'}})}}
+								{{form_errors(FormArticle.imageFile)}}
+							</div>
+						</div>
+						<div>
+							{{form_label(FormArticle.content, "Contenu de l'article", {'label_attr': {'class': ''}})}}
+							{{form_widget(FormArticle.content, {'attr': {'class' : 'border-gray-700 w-full p-3 h-40 text-sm rounded-lg'}})}}
+							{{form_errors(FormArticle.content)}}
+
+						</div>
+
+						<div class="mt-4">
+							<button type="submit" class="inline-flex items-center justify-center w-full px-5 py-3 text-white bg-black rounded-lg sm:w-auto">
+								<span class="font-medium">
+									Publier
+								</span>
+
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-3" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+								</svg>
+							</button>
+						</div>
+						{{form_end(FormArticle)}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

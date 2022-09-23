@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog: Accueil
+{% endblock %}
+
+{% block body %}
+    {% include "layouts/_navbar.html.twig" %}
+	<section class="bg-gray-50">
+		<div class="px-4 py-32 mx-auto max-w-screen-xl lg:h-screen lg:items-center lg:flex">
+			<div class="max-w-xl mx-auto text-center">
+				<h1 class="text-3xl text-gray-600 font-extrabold sm:text-5xl">
+					Ismailo.
+					<strong class="font-extrabold text-red-700 sm:block">
+						Blog.
+					</strong>
+				</h1>
+
+				<p class="mt-4 sm:leading-relaxed font-bold text-gray-800 sm:text-xl text-2xl">
+					Blog développé par Ismail Hassan, Etudiant à la plateforme.
+				</p>
+
+				<div class="flex flex-wrap justify-center mt-8 gap-4">
+					<a class="block w-full px-12 py-3 text-sm font-medium text-white bg-red-600 rounded shadow sm:w-auto active:bg-red-500 hover:bg-red-700 focus:outline-none focus:ring" href="{{path('article_create')}}">
+						Publier un article
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	{% include "layouts/_footer.html.twig" %}
+{% endblock %}
