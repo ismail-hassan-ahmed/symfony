@@ -172,7 +172,7 @@ class __TwigTemplate_3addb48a0f50e8dc144efe689444220e extends Template
             echo "</strong>
 \t\t\t\t\t\t<span class=\"text-md text-gray-400 font-bold\">";
             // line 44
-            echo twig_escape_filter($this->env, $this->extensions['Twig\Extra\Intl\IntlExtension']->formatDateTime($this->env, twig_get_attribute($this->env, $this->source, $context["comment"], "publishedAt", [], "any", false, false, false, 44), "medium", "medium", "", null, "gregorian", "fr"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Twig\Extra\Intl\IntlExtension']->formatDateTime($this->env, twig_get_attribute($this->env, $this->source, $context["comment"], "publishedAt", [], "any", false, false, false, 44)), "html", null, true);
             echo "</span>
 \t\t\t\t\t\t<p class=\"text-sm\">
 \t\t\t\t\t\t\t";
@@ -261,7 +261,7 @@ class __TwigTemplate_3addb48a0f50e8dc144efe689444220e extends Template
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"flex-1 border-4 rounded-lg px-4 py-2 sm:px-6 sm:py-4 leading-relaxed\">
 \t\t\t\t\t\t<strong>{{comment.user.firstName}}</strong>
-\t\t\t\t\t\t<span class=\"text-md text-gray-400 font-bold\">{{comment.publishedAt|format_datetime(locale=\"fr\")}}</span>
+\t\t\t\t\t\t<span class=\"text-md text-gray-400 font-bold\">{{comment.publishedAt|format_datetime()}}</span>
 \t\t\t\t\t\t<p class=\"text-sm\">
 \t\t\t\t\t\t\t{{comment.content}}
 \t\t\t\t\t\t</p>

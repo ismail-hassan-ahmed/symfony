@@ -199,7 +199,7 @@ class __TwigTemplate_ba2ae2a6133b63330998e6bad9600a67 extends Template
       <div class=\"relative\">
         ";
         // line 73
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 73, $this->source); })()), "agreeTerms", [], "any", false, false, false, 73), 'widget', ["attr" => ["class" => "w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm"]]);
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 73, $this->source); })()), "agreeTerms", [], "any", false, false, false, 73), 'widget', ["attr" => ["class" => " p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm"]]);
         echo "
 \t\t<div class=\"text-red-500 font-semibold text-xs bg-white\">
 \t\t\t";
@@ -213,7 +213,10 @@ class __TwigTemplate_ba2ae2a6133b63330998e6bad9600a67 extends Template
     <div class=\"flex items-center justify-between\">
       <p class=\"text-sm text-gray-500\">
         Vous avez déja un compte ?
-        <a class=\"underline\" href=\"\">Connectez-vous</a>
+        <a class=\"underline\" href=\"";
+        // line 83
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        echo "\">Connectez-vous</a>
       </p>
 
       <button
@@ -255,7 +258,7 @@ class __TwigTemplate_ba2ae2a6133b63330998e6bad9600a67 extends Template
 
     public function getDebugInfo()
     {
-        return array (  235 => 110,  229 => 94,  207 => 75,  202 => 73,  196 => 70,  186 => 63,  181 => 61,  176 => 59,  167 => 53,  162 => 51,  156 => 48,  147 => 42,  142 => 40,  137 => 38,  128 => 32,  123 => 30,  117 => 27,  110 => 23,  94 => 9,  92 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  238 => 110,  232 => 94,  218 => 83,  207 => 75,  202 => 73,  196 => 70,  186 => 63,  181 => 61,  176 => 59,  167 => 53,  162 => 51,  156 => 48,  147 => 42,  142 => 40,  137 => 38,  128 => 32,  123 => 30,  117 => 27,  110 => 23,  94 => 9,  92 => 8,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -332,7 +335,7 @@ class __TwigTemplate_ba2ae2a6133b63330998e6bad9600a67 extends Template
        {{form_label(registrationForm.agreeTerms, 'Je comprends', {'label_attr': {'class':'text-gray-500'}})}}
 
       <div class=\"relative\">
-        {{form_widget(registrationForm.agreeTerms, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+        {{form_widget(registrationForm.agreeTerms, {'attr': {'class': ' p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
 \t\t<div class=\"text-red-500 font-semibold text-xs bg-white\">
 \t\t\t{{form_errors(registrationForm.agreeTerms)}}
 \t\t</div>
@@ -342,7 +345,7 @@ class __TwigTemplate_ba2ae2a6133b63330998e6bad9600a67 extends Template
     <div class=\"flex items-center justify-between\">
       <p class=\"text-sm text-gray-500\">
         Vous avez déja un compte ?
-        <a class=\"underline\" href=\"\">Connectez-vous</a>
+        <a class=\"underline\" href=\"{{path('app_login')}}\">Connectez-vous</a>
       </p>
 
       <button

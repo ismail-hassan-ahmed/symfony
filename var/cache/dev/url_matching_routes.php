@@ -17,7 +17,6 @@ return [
         '/admin' => [[['_route' => 'admin', '_controller' => 'App\\Controller\\Admin\\DashboardController::index'], null, null, null, false, false, null]],
         '/articles' => [[['_route' => 'app_article', '_controller' => 'App\\Controller\\ArticleController::index'], null, null, null, false, false, null]],
         '/articles/publier-un-article' => [[['_route' => 'article_create', '_controller' => 'App\\Controller\\ArticleController::create'], null, null, null, false, false, null]],
-        '/comment' => [[['_route' => 'app_comment', '_controller' => 'App\\Controller\\CommentController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/profile' => [[['_route' => 'app_profile', '_controller' => 'App\\Controller\\ProfileController::index'], null, null, null, false, false, null]],
         '/inscription' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],

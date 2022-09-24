@@ -20,7 +20,6 @@ return [
     'app_article' => [[], ['_controller' => 'App\\Controller\\ArticleController::index'], [], [['text', '/articles']], [], [], []],
     'article_create' => [[], ['_controller' => 'App\\Controller\\ArticleController::create'], [], [['text', '/articles/publier-un-article']], [], [], []],
     'article_show' => [['slug'], ['_controller' => 'App\\Controller\\ArticleController::show'], [], [['variable', '/', '[^/]++', 'slug', true], ['text', '/articles']], [], [], []],
-    'app_comment' => [[], ['_controller' => 'App\\Controller\\CommentController::index'], [], [['text', '/comment']], [], [], []],
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
     'app_profile' => [[], ['_controller' => 'App\\Controller\\ProfileController::index'], [], [['text', '/profile']], [], [], []],
     'profile_edit' => [['id'], ['_controller' => 'App\\Controller\\ProfileController::edit'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/profile/edit']], [], [], []],

@@ -70,7 +70,7 @@
        {{form_label(registrationForm.agreeTerms, 'Je comprends', {'label_attr': {'class':'text-gray-500'}})}}
 
       <div class="relative">
-        {{form_widget(registrationForm.agreeTerms, {'attr': {'class': 'w-full p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
+        {{form_widget(registrationForm.agreeTerms, {'attr': {'class': ' p-4 pr-12 text-sm border-gray-700 rounded-lg shadow-sm'}})}}
 		<div class="text-red-500 font-semibold text-xs bg-white">
 			{{form_errors(registrationForm.agreeTerms)}}
 		</div>
@@ -80,7 +80,7 @@
     <div class="flex items-center justify-between">
       <p class="text-sm text-gray-500">
         Vous avez déja un compte ?
-        <a class="underline" href="">Connectez-vous</a>
+        <a class="underline" href="{{path('app_login')}}">Connectez-vous</a>
       </p>
 
       <button

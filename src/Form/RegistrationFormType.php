@@ -66,13 +66,6 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
-            ->add('Envoyer', SubmitType::class, [
-
-                'attr' => [
-
-                    "class" => "bg-green-500 text-white p-4"
-                ]
-            ])
         ;
     }
 
